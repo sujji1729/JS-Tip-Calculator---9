@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>Tip Calculator</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="tip.css">
+
+  </head>
+
+  <body>
+
+    <div class="tip-calculator-container pb-5">
+
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/tip-calculator-img.png" class="tip-calculator-image">
+
+        <h1 class="tip-calculator-heading mt-4 mb-4 text-center">Tip Calcilator</h1>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="mb-4 col-12 col-md-6">
+                    <p class="input-label mb-2">BILL AMOUNT</p>
+                    <input type="text" class="user-input" id="billAmount">
+                </div>
+
+                <div class="mb-4 col-12 col-md-6">
+                    <p class="input-label mb-2">PERCENTAGE TIP</p>
+                    <input type="text" class="user-input" id="percentageTip">
+                </div>
+
+                <div class="mb-4 col-12 col-md-6">
+                    <p class="input-label mb-2">TIP AMOUNT</p>
+                    <input type="text" class="user-input" id="tipAmount">
+                </div>
+
+                <div class="mb-4 col-12 col-md-6">
+                    <p class="input-label mb-2">TOTAL</p>
+                    <input type="text" class="user-input" id="totalAmount">
+                </div>
+
+                <div class="col-12 text-center mt-4">
+
+                    <button class="btn btn-info calculate-tip-button" onclick="calculateButton()">CALCULATE</button>
+                    <p class="error-message" id="errorMessage"></p>
+                </div>
+            </div>
+      
+        </div>
+      
+    </div>
+    
+      
+    <!-- JavaScript -->
+    <script src="tip.js"></script>
+
+  </body>
+</html>
